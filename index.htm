@@ -76,7 +76,11 @@
                     var TEMP_span_n=100000+span_n*index+Math.ceil(Math.random()*span_n);
                     //console.log(TEMP_span_n);
                     //-------------------------------------
-                    addtr(parseInt(TEMP_span_n),"事假",o,n,temp.course[Math.floor(Math.random() * temp.course.length)]["event"],temp.reason[Math.floor(Math.random() * temp.reason.length)]["event"],"tr0","已审核");
+                    if (index%2==1){addtr(parseInt(TEMP_span_n),"事假",o,n,temp.course[Math.floor(Math.random() * temp.course.length)]["event"],temp.reason[Math.floor(Math.random() * temp.reason.length)]["event"],"tr1","已审核");}
+                    else{
+                        addtr(parseInt(TEMP_span_n),"事假",o,n,temp.course[Math.floor(Math.random() * temp.course.length)]["event"],temp.reason[Math.floor(Math.random() * temp.reason.length)]["event"],"tr0","已审核");
+                    }
+                    
                     //var dt = new Date(temp_data["开始时间"]);
                     //console.log();
                     var tr_count = document.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
@@ -314,7 +318,7 @@
             <div class="h_menu">
                 <nav>
                     <ul class="menu list-unstyled">
-                        <li><a href="https://ssp.scnu.edu.cn/Default.aspx">首页</a>
+                        <li><a onclick="loadXMLDoc()">首页</a>
                             <ul>
                                 <li><a href="https://ssp.scnu.edu.cn/showcontent.aspx?fid=0000">系统公告</a></li>
                                 <li><a href="https://ssp.scnu.edu.cn/showcontent.aspx?fid=0099">帮助指南</a></li>
@@ -323,7 +327,7 @@
                                 <li><a href="https://ssp.scnu.edu.cn/ShowStatistics.aspx">数据统计</a></li>
                             </ul>
                         </li>
-                        <li><a href="https://ssp.scnu.edu.cn/opt_xx_myapps.aspx?key=RJteqvsLHrFd3XHC&amp;fid=7">个人信息</a>
+                        <li><a onclick="getout()">个人信息</a>
                             <ul>
                                 <li class="bg0"><a href="https://ssp.scnu.edu.cn/opt_xx_myapps.aspx?key=RJteqvsLHrFd3XHC&amp;fid=7">我的应用</a></li>
 <li class="bg1"><a href="https://ssp.scnu.edu.cn/opt_xx_xxhz.aspx?key=RJteqvsLHrFd3XHC&amp;fid=7">信息汇总</a></li>
@@ -335,7 +339,7 @@
 
                             </ul>
                         </li>
-                        <li><a href="https://ssp.scnu.edu.cn/opt_xx_myapps.aspx?key=RJteqvsLHrFd3XHC&amp;fid=8">奖学助学</a>
+                        <li><a onclick="getin()">奖学助学</a>
                             <ul>
                                 <li class="bg0"><a href="https://ssp.scnu.edu.cn/opt_jz_jzsq.aspx?key=RJteqvsLHrFd3XHC&amp;fid=8">奖助申请</a></li>
 <li class="bg1"><a href="https://ssp.scnu.edu.cn/opt_jz_jzgs.aspx?key=RJteqvsLHrFd3XHC&amp;fid=8">奖助公示</a></li>
