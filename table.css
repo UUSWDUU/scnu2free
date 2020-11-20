@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+table { border-collapse: collapse; width: 100%; margin-top: 8px; }
+
+table, th, td { border: 1px solid rgb(225, 226, 230); }
+
+tr { height: 40px; line-height: 26px; white-space: nowrap; }
+
+tr:nth-child(2n) td { background: rgb(255, 255, 255); }
+
+tr:nth-child(2n+1) td { background: rgb(244, 249, 248); }
+
+th { line-height: 30px; background-color: rgb(228, 238, 237); color: rgb(19, 93, 87); font-weight: normal; text-align: center; text-align-last: center; white-space: nowrap; }
+
+th a { color: rgb(19, 93, 87) !important; }
+
+th a:hover { color: rgb(90, 193, 197); }
+
+th #user_pic { float: none; text-align: center; text-align-last: center; }
+
+th[colspan="7"] { background-color: rgb(141, 210, 204); color: rgb(255, 255, 255); text-align: left; text-align-last: left; line-height: 32px; padding: 0px; }
+
+th[colspan="7"] span { padding-left: 16px; padding-right: 30px; background: url("../images/bg_trh_icon.png") 0% 0% / 100% 100% no-repeat; position: relative; left: -10px; }
+
+td { background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); height: 40px; font-size: 14px; padding: 2px 24px; white-space: nowrap; }
+
+td a { color: rgb(35, 123, 240) !important; }
+
+.pagerstyle td, .pagerstyle tr { border: 1px solid rgb(255, 255, 255); text-align: center; text-align-last: center; }
+
+.pagerstyle table td { display: inline-block; padding: 0px; border: 0px; background-color: rgb(255, 255, 255); margin-top: 10px; }
+
+.pagerstyle td a, .pagerstyle td span { display: block; height: 40px; line-height: 40px; padding: 0px 20px; font-size: 16px; color: rgb(51, 51, 51) !important; }
+
+.pagerstyle td a:hover { background: rgb(235, 248, 244); }
+
+.pagerstyle td span { background: rgb(228, 238, 237); }
+
+@media only screen and (max-device-width: 500px) {
+  tr:nth-child(2n+1) td { background: rgb(232, 240, 250); }
+  tr:nth-child(2n) td { background: rgb(250, 245, 254); }
+  td { font-size: 20px; padding: 20px 0px; white-space: normal; }
+}

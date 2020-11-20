@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+.main_right { width: 82%; float: right; background-color: rgb(255, 255, 255); margin-bottom: 40px; text-align: left; text-align-last: left; }
+
+@media (max-width: 1206px) {
+  .main_right { float: none; width: 70% !important; }
+}
+
+@media only screen and (max-device-width: 500px) {
+  .main_right { width: 95% !important; }
+}
+
+.rightgrid { padding: 20px 30px 30px; }
+
+.posts_title { font-weight: bold; font-size: 22px; color: rgb(38, 152, 143); }
+
+.posts_vtitle { font-weight: normal; color: rgb(137, 137, 137); font-size: 14px; }
+
+.posts_content, .right_content, .right_form { border-top: 4px solid rgb(68, 167, 159); padding-top: 30px; }
+
+.posts_content p { text-indent: 2em; line-height: 32px; }
+
+.posts_content b { font-weight: bold; }
+
+.right_form { width: 100%; margin: 0px auto; }
+
+.right_form h3 { height: 34px; line-height: 34px; background-color: rgb(246, 252, 250); font-weight: normal; font-size: 16px; padding: 0px; }
+
+.right_form h3 span { display: inline-block; padding-left: 16px; padding-right: 20px; background: url("../images/bg_trh2_icon.png") 0% 0% / 100% 100% no-repeat; }
+
+.right_apps { }
+
+.right_apps ul { font-size: 0px; }
+
+.right_apps li { width: 16%; background-color: rgb(86, 127, 230); text-align: center; text-align-last: center; font-size: 16px; margin: 20px 2% 10px; }
+
+.right_apps li:hover { background-color: rgb(94, 95, 219); }
+
+.right_apps a { display: block; padding: 20px 8px; color: rgb(255, 255, 255); }
